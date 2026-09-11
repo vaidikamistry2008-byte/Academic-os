@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fffdf9;
+    color: #40516b;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================
+   SOFT COLORFUL CORNERS
+========================= */
+
+.login-page::before {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    background: #e5f6ec;
+    border-radius: 50%;
+    top: -260px;
+    left: -180px;
+}
+
+.login-page::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #eeeaff;
+    border-radius: 50%;
+    bottom: -250px;
+    right: -160px;
+}
+
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.welcome-section {
+    width: 460px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* SMALL LABEL */
+
+.mini-title {
+    display: inline-block;
+    padding: 9px 18px;
+    background: #edf8f1;
+    color: #649277;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   MAIN TITLE
+========================= */
+
+.welcome-section h1 {
+    font-family: Georgia, serif;
+    font-size: 68px;
+    line-height: 1;
+    letter-spacing: -3px;
+    color: #526d8d;
+    margin-bottom: 20px;
+}
+
+.welcome-section h1 span {
+    color: #65a27d;
+}
+
+
+/* =========================
+   TAGLINE
+========================= */
+
+.welcome-section h2 {
+    font-size: 27px;
+    font-weight: 600;
+    color: #8172a3;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+    max-width: 420px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #7d8795;
+}
+
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-card {
+    width: 420px;
+    background: #ffffff;
+    padding: 42px;
+    border-radius: 27px;
+    border: 1px solid #eee9e4;
+
+    box-shadow:
+        0 20px 60px rgba(95, 105, 125, 0.12);
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.welcome-small {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #9a88b5;
+    margin-bottom: 8px;
+}
+
+.login-card h3 {
+    font-size: 29px;
+    color: #526d8d;
+    margin-bottom: 9px;
+}
+
+.login-text {
+    font-size: 14px;
+    color: #929aa5;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #59677a;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+
+
+/* =========================
+   ROLE BUTTONS
+========================= */
+
+.roles {
+    display: flex;
+    gap: 9px;
+}
+
+.roles button {
+    flex: 1;
+    padding: 12px 5px;
+
+    border: 1px solid #dfe5eb;
+
+    background: #fcfdfd;
+
+    color: #687687;
+
+    border-radius: 11px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+
+/* ROLE HOVER */
+
+.roles button:hover {
+    background: #f2f8ff;
+    border-color: #b9d5ea;
+    transform: translateY(-2px);
+}
+
+
+/* SELECTED ROLE */
+
+.roles button.active {
+    background: #c5e1f2;
+    color: #405d78;
+    border-color: #acd2ea;
+
+    box-shadow:
+        0 5px 15px rgba(120, 175, 210, 0.16);
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    background: #fdfdfd;
+
+    border: 1px solid #e0e5eb;
+
+    border-radius: 11px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    color: #344054;
+
+    transition: all 0.25s ease;
+}
+
+input::placeholder {
+    color: #a5adb8;
+}
+
+input:focus {
+    background: #ffffff;
+
+    border-color: #a9cee7;
+
+    box-shadow:
+        0 0 0 4px rgba(169, 206, 231, 0.13);
+}
+
+
+/* =========================
+   FORGOT PASSWORD
+========================= */
+
+.forgot {
+    text-align: right;
+
+    font-size: 12px;
+
+    color: #8876a7;
+
+    margin-top: 12px;
+
+    margin-bottom: 22px;
+
+    cursor: pointer;
+}
+
+.forgot:hover {
+    color: #705c91;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #9fcfee,
+        #abd9b8
+    );
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 8px 20px rgba(125, 180, 185, 0.18);
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(125, 180, 185, 0.25);
+}
+
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.bottom-text {
+    text-align: center;
+
+    font-size: 11px;
+
+    color: #a0a7b1;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+    .login-page {
+        flex-direction: column;
+        gap: 45px;
+        padding: 40px 20px;
+    }
+
+    .welcome-section {
+        width: 100%;
+        max-width: 460px;
+        text-align: center;
+    }
+
+    .welcome-section h1 {
+        font-size: 52px;
+    }
+
+    .description {
+        margin: auto;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .welcome-section h1 {
+        font-size: 43px;
+    }
+
+    .welcome-section h2 {
+        font-size: 22px;
+    }
+
+    .login-card {
+        padding: 30px 25px;
+    }
+}
